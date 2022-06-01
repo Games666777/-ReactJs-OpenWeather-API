@@ -1,0 +1,83 @@
+.weather{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 460px;
+    height: 320px;
+    background: #FAFAFA;
+    box-shadow: 0px 5px 27px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+
+    padding: 26px 38px;
+    transition: .5s;
+
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.weather:hover{
+    box-shadow: 0px 5px 17px 1px rgba(0, 0, 0, 0.1);  
+}
+.location{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    color: #385774;
+    margin-bottom: 58px;
+}
+.mainInfo{
+    display: flex;
+    align-items: center;
+
+}
+.img img{
+    width: 140px;
+}
+.img{
+    margin-right: 25px;
+    margin-left: -35px;
+}
+.temp{
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+    color: #385774;
+}
+.weatherType{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #385774;
+    text-transform: capitalize
+}
+.feelsLike{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #385774;
+}
+.delete{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: hsl(338deg 72% 42%);
+    color: #FAFAFA;
+    font-size: 15px;
+}
+
+
+@media (max-width:600px){
+    .weather{
+        width: 290px;
+        height: 340px;
+    }
+}
